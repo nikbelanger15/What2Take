@@ -15603,6 +15603,11 @@
   "RootNamespace": "What2Take",
   "Documents": [
     {
+      "FilePath": "c:\\Users\\Administrator\\Documents\\Work Projects\\ADM4379\\What2Take\\Pages\\CourseList.cshtml",
+      "TargetPath": "Pages\\CourseList.cshtml",
+      "FileKind": "mvc"
+    },
+    {
       "FilePath": "c:\\Users\\Administrator\\Documents\\Work Projects\\ADM4379\\What2Take\\Pages\\Privacy.cshtml",
       "TargetPath": "Pages\\Privacy.cshtml",
       "FileKind": "mvc"
@@ -15610,6 +15615,11 @@
     {
       "FilePath": "c:\\Users\\Administrator\\Documents\\Work Projects\\ADM4379\\What2Take\\Pages\\Shared\\_ValidationScriptsPartial.cshtml",
       "TargetPath": "Pages\\Shared\\_ValidationScriptsPartial.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "c:\\Users\\Administrator\\Documents\\Work Projects\\ADM4379\\What2Take\\Pages\\Submit.cshtml",
+      "TargetPath": "Pages\\Submit.cshtml",
       "FileKind": "mvc"
     },
     {

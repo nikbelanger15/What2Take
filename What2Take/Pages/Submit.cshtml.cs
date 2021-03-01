@@ -1,20 +1,18 @@
-﻿using System;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.RazorPages;
 using Microsoft.Extensions.Logging;
-using What2Take.Services;
-using What2Take.Model;
 
 namespace What2Take.Pages
 {
-    public class IndexModel : PageModel
+    public class SubmitModel : PageModel
     {
-        private readonly ILogger<IndexModel> _logger;
+        private readonly ILogger<SubmitModel> _logger;
 
-        public IndexModel(ILogger<IndexModel> logger)
+        public SubmitModel(ILogger<SubmitModel> logger)
         {
             _logger = logger;
         }
@@ -24,4 +22,3 @@ namespace What2Take.Pages
         }
     }
 }
-

@@ -1,0 +1,19 @@
+@page
+@model CourseListModel
+@{
+    ViewData["Title"] = "CourseList";
+}
+<h1>@ViewData["Title"]</h1>
+
+<div class="text-center">
+    <h1 class="display-4">Welcome</h1>
+    <p>Learn about <a href="https://docs.microsoft.com/aspnet/core">building Web apps with ASP.NET Core</a>.</p>
+    @foreach (var crs in Model.Courses) {
+        <div class="text-center">
+            <p>Course Name: @crs.Id</p>
+            <p>Course Code: @crs.code</p>
+            <p>Course Difficulty: @crs.difficulty</p>
+            @* <p>Course Grade: @crs.grade</p> *@
+        </div>
+    }
+</div>

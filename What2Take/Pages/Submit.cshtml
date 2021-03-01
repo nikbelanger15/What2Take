@@ -1,0 +1,39 @@
+@page
+@model PrivacyModel
+@{
+    ViewData["Title"] = "Submit a Review";
+}
+<h1>@ViewData["Title"]</h1>
+
+
+<div class="grid-container">
+    <div class="grid-item">Select a Course</div>
+    <div class="grid-item">Overall Rating</div>
+    <div class="grid-item">
+        <select>
+            <option value="Score">Select</option>
+            <option value="1">1</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+            <option value="4">4</option>
+            <option value="5">5</option>
+        </select>
+    </div>
+    <div class="grid-item">Grade Received</div>
+    <div class="grid-item">
+        <select>
+            <option value="Score">Select</option>
+            <option value="A">A</option>
+            <option value="B">B</option>
+            <option value="C">C</option>
+            <option value="D">D</option>
+        </select>
+    </div>
+    <div class="grid-item">Comments</div>
+    <div class="grid-item">
+        <textarea name="Comments" style="resize: none"></textarea>
+    </div>
+</div>
+<div>
+    <a href="Submit.html" class="submit">Submit Review</a>
+</div>
