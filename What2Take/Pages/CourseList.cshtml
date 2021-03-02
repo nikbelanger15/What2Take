@@ -5,7 +5,25 @@
 }
 <h1>@ViewData["Title"]</h1>
 
+<form method="POST">
+    <label for="sort">Sort by: </label>
+    <select name="sort">
+        <option value="Code">Select</option>
+        <option value="courseCode">Course Code</option>
+        <option value="grade">Grade</option>
+        <option value="difficulty">Difficulty</option>
+    </select>
 
+    <label for="sort">Sort by: </label>
+    <select name="filter">
+        <option value="Code">Select</option>
+        <option value="courseCode">Course Code</option>
+        <option value="grade">Grade</option>
+        <option value="difficulty">Difficulty</option>
+    </select>
+
+
+</form>
 <table>
     <tr>
         <th>Course Code</th>

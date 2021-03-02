@@ -15623,6 +15623,11 @@
       "FileKind": "mvc"
     },
     {
+      "FilePath": "c:\\Users\\Administrator\\Documents\\Work Projects\\ADM4379\\What2Take\\Pages\\Review.cshtml",
+      "TargetPath": "Pages\\Review.cshtml",
+      "FileKind": "mvc"
+    },
+    {
       "FilePath": "c:\\Users\\Administrator\\Documents\\Work Projects\\ADM4379\\What2Take\\Pages\\Index.cshtml",
       "TargetPath": "Pages\\Index.cshtml",
       "FileKind": "mvc"

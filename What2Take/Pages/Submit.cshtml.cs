@@ -22,9 +22,18 @@ namespace What2Take.Pages
             MyCoursesService = CrsService;
         }
 
-        public void OnGet()
+        public void OnPost()
         {
-            MyCoursesService.Create();
+            var courseCode = Request.Form["courseCode"];
+            var difficulty = Request.Form["difficulty"];
+            var grade = Request.Form["grade"];
+            var department = Request.Form["department"];
+            var comments = Request.Form["comments"];
+
+            var data = new Courses(courseCode, Int32.Parse(difficulty), grade, department, comments);
+
+            MyCoursesService.Create(data);
+
         }
     }
 }
