@@ -5,10 +5,43 @@
 }
 <h1>@ViewData["Title"]</h1>
 
+<form method="POST" action="Index">
+    <fieldset>
+        <legend>Add Customer</legend>
+        <div>
+        <label for="CompanyName">Company Name:</label>
+        <input type="text" name="CompanyName" value="" />
+        </div>
+        <div>
+        <label for="ContactName">Contact Name:</label>
+        <input type="text" name="ContactName" value="" />
+        </div>
+        <div>
+        <label for="Employees">Employee Count:</label>
+        <input type="text" name="Employees" value="" />
+        </div>
+        <div>
+        <label>&nbsp;</label>
+        <input type="submit" value="Submit" class="submit" />
+        </div>
+    </fieldset>
+</form>
 
-<div class="grid-container">
+
+
+
+@* <div class="grid-container">
     <div class="grid-item">Select a Course</div>
-    <div class="grid-item">Overall Rating</div>
+    <div class="grid-item">
+        <select>
+            <option value="Code">Select</option>
+            <option value="ADM4379">ADM4379</option>
+            <option value="ADM1100">ADM1100</option>
+            <option value="ADM1100">SOC3116</option>
+            <option value="ADM1100">LAW3222</option>
+        </select>
+    </div>
+    <div class="grid-item">Difficulty</div>
     <div class="grid-item">
         <select>
             <option value="Score">Select</option>
@@ -17,6 +50,11 @@
             <option value="3">3</option>
             <option value="4">4</option>
             <option value="5">5</option>
+            <option value="5">6</option>
+            <option value="5">7</option>
+            <option value="5">8</option>
+            <option value="5">9</option>
+            <option value="5">10</option>
         </select>
     </div>
     <div class="grid-item">Grade Received</div>
@@ -34,6 +72,6 @@
         <textarea name="Comments" style="resize: none"></textarea>
     </div>
 </div>
-<div>
-    <a href="Submit.html" class="submit">Submit Review</a>
-</div>
+<button id="submit" name="submit" onclick="submitReview()">
+    Submit
+</button> *@
