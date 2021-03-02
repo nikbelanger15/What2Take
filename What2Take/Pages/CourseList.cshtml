@@ -5,15 +5,35 @@
 }
 <h1>@ViewData["Title"]</h1>
 
+
+<table>
+    <tr>
+        <th>Course Code</th>
+        <th>Average Difficulty</th>
+        <th>Average Grade Received</th>
+    </tr>
+    @foreach (var crs in Model.Courses) {
+        <tr>
+            <td>@crs.code</td>
+            <td>@crs.difficulty</td>
+            <td>@crs.grade</td>
+        </tr>
+    }
+</table>
+
+
+
+
+@* 
+
 <div class="text-center">
-    <h1 class="display-4">Welcome</h1>
-    <p>Learn about <a href="https://docs.microsoft.com/aspnet/core">building Web apps with ASP.NET Core</a>.</p>
+    <h1 class="display-4">Find a Course</h1>
     @foreach (var crs in Model.Courses) {
         <div class="text-center">
             <p>Course Name: @crs.Id</p>
             <p>Course Code: @crs.code</p>
             <p>Course Difficulty: @crs.difficulty</p>
-            @* <p>Course Grade: @crs.grade</p> *@
+            <p>Course Grade: @crs.grade</p>
         </div>
     }
-</div>
+</div> *@

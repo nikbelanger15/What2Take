@@ -1,4 +1,5 @@
 using MongoDB.Driver;
+using MongoDB.Bson;
 using System.Collections.Generic;
 using System.Linq;
 using What2Take.Model;
@@ -14,9 +15,15 @@ namespace What2Take.Services
             _courses = database.GetCollection<Courses>(settings.CoursesCollectionName);
         }
 
+        // Get Courses to Display on CourseList
         public List<Courses> Get() {
             return _courses.Find(course => true).ToList();
         }    
+
+        //Create Course by Submit Page
+        public Courses Create(Courses courses) {
+            _courses.InsertOne(courses);
+            return courses;
+        }
     }
-         
 }
