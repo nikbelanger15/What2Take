@@ -49,3 +49,4 @@ C:\Users\Administrator\Documents\Work Projects\ADM4379\What2Take\obj\Debug\net5.
 C:\Users\Administrator\Documents\Work Projects\ADM4379\What2Take\obj\Debug\net5.0\What2Take.genruntimeconfig.cache
 C:\Users\Administrator\Documents\Work Projects\ADM4379\What2Take\obj\Debug\net5.0\Razor\Pages\CourseList.cshtml.g.cs
 C:\Users\Administrator\Documents\Work Projects\ADM4379\What2Take\obj\Debug\net5.0\Razor\Pages\Submit.cshtml.g.cs
+C:\Users\Administrator\Documents\Work Projects\ADM4379\What2Take\obj\Debug\net5.0\Razor\Pages\Review.cshtml.g.cs
