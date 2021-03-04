@@ -8,50 +8,35 @@
 <form method="POST">
     <label for="sort">Sort by: </label>
     <select name="sort">
-        <option value="Code">Select</option>
-        <option value="courseCode">Course Code</option>
+        <option value="Select">Select</option>
+        <option value="code">Course Code</option>
         <option value="grade">Grade</option>
         <option value="difficulty">Difficulty</option>
     </select>
 
-    <label for="sort">Sort by: </label>
+    <label for="filter">Filter by: </label>
     <select name="filter">
-        <option value="Code">Select</option>
-        <option value="courseCode">Course Code</option>
+        <option value="Select">Select</option>
+        <option value="code">Course Code</option>
         <option value="grade">Grade</option>
         <option value="difficulty">Difficulty</option>
     </select>
 
-
+    <input type="submit" class="submit" value="Submit"/>
 </form>
+
+
 <table>
     <tr>
         <th>Course Code</th>
         <th>Average Difficulty</th>
         <th>Average Grade Received</th>
     </tr>
-    @foreach (var crs in Model.Courses) {
+    @foreach (var avg in Model.Averages) {
         <tr>
-            <td>@crs.code</td>
-            <td>@crs.difficulty</td>
-            <td>@crs.grade</td>
+            <td><a asp-page="/Review" asp-route-id="@avg.code">@avg.code</a> </td>
+            <td>@avg.difficulty</td>
+            <td>@avg.grade</td>
         </tr>
     }
 </table>
-
-
-
-
-@* 
-
-<div class="text-center">
-    <h1 class="display-4">Find a Course</h1>
-    @foreach (var crs in Model.Courses) {
-        <div class="text-center">
-            <p>Course Name: @crs.Id</p>
-            <p>Course Code: @crs.code</p>
-            <p>Course Difficulty: @crs.difficulty</p>
-            <p>Course Grade: @crs.grade</p>
-        </div>
-    }
-</div> *@

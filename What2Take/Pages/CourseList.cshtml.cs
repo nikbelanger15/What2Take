@@ -15,17 +15,33 @@ namespace What2Take.Pages
         private readonly ILogger<CourseListModel> _logger;
 
         public CoursesService MyCoursesService;
-
-        public IEnumerable<Courses> Courses;
+        public IEnumerable<Average> averages;
+        public IEnumerable<Average> Averages {
+            get {
+                if (this.averages == null) return Enumerable.Empty<Average>();
+                else return this.averages;
+            }
+            set {this.averages = value;}
+        }
         public CourseListModel(ILogger<CourseListModel> logger, CoursesService CrsService)
         {
             _logger = logger;
             MyCoursesService = CrsService;
         }
 
+
+
         public void OnGet()
         {
-            Courses = MyCoursesService.Get();
+
+            averages = MyCoursesService.GetUniqueCourse();
+        }
+
+        public void OnPost()
+        {
+            Console.WriteLine(Request.Form["sort"]);
+            Console.WriteLine(Request.Form["filter"]);
+            averages = MyCoursesService.GetFiltered(Request.Form["filter"], Request.Form["sort"]);
         }
     }
 }

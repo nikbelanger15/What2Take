@@ -65,13 +65,8 @@
 
     <div>
         <label for="grade">Grade</label>
-        <select name="grade">
-                <option value="Score">Select</option>
-                <option value="A">A</option>
-                <option value="B">B</option>
-                <option value="C">C</option>
-                <option value="D">D</option>
-        </select>
+        <input type="number" name="grade" required size="45" pattern="[0-9]{3}" title="3 cap uppercase and 4 numbers">
+        <span class="validity"></span>
     </div>
 
     <div>

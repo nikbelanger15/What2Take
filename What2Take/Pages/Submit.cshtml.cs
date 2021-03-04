@@ -30,7 +30,7 @@ namespace What2Take.Pages
             var department = Request.Form["department"];
             var comments = Request.Form["comments"];
 
-            var data = new Courses(courseCode, Int32.Parse(difficulty), grade, department, comments);
+            var data = new Courses(courseCode, Int32.Parse(difficulty), Int32.Parse(grade), department, comments);
 
             MyCoursesService.Create(data);
 

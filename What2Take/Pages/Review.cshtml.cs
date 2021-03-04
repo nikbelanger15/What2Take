@@ -24,7 +24,8 @@ namespace What2Take.Pages
 
         public void OnGet()
         {
-            Courses = MyCoursesService.Get();
+            Courses = MyCoursesService.getCoursesByCode(Request.Query["id"]);
+
         }
     }
 }

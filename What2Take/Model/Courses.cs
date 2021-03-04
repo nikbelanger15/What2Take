@@ -3,7 +3,7 @@ using MongoDB.Bson.Serialization.Attributes;
 namespace What2Take.Model {
     public class Courses {
 
-        public Courses (string code, int difficulty, string grade, string department, string comments) {
+        public Courses (string code, int difficulty, int grade, string department, string comments) {
             this.code = code;
             this.department = department;
             this.difficulty = difficulty;
@@ -17,7 +17,7 @@ namespace What2Take.Model {
         public string code {get; set;}
         public string department {get; set;}
         public int difficulty {get; set;}
-        public string grade {get; set;}
+        public int grade {get; set;}
         public string comments { get; set; }
     }
 }
