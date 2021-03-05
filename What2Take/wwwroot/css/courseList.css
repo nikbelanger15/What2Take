@@ -1,0 +1,23 @@
+/*table style */
+table {
+	font-family: arial, sans-serif;
+	border-collapse: collapse;
+	width: 100%;
+	table-layout: fixed;
+}
+
+td, th {
+	border: 1px solid #dddddd;
+	text-align: left;
+	padding: 8px;
+	table-layout: fixed;
+}
+
+tbody {
+	background-color: #d4d4d4;
+
+}
+
+thead {
+	background-color: #4CAF50;
+}

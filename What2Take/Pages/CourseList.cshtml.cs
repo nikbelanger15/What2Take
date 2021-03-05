@@ -26,7 +26,7 @@ namespace What2Take.Pages
         public CourseListModel(ILogger<CourseListModel> logger, CoursesService CrsService)
         {
             _logger = logger;
-            MyCoursesService = CrsService;
+            this.MyCoursesService = CrsService;
         }
 
 

@@ -3,53 +3,41 @@
 @{
     ViewData["Title"] = "Submit a Review";
 }
+<head>
+    <script src="~/js/site.js"></script>
+    <link rel="stylesheet" href="~/css/submit.css" />
+</head>
 <h1>@ViewData["Title"]</h1>
 
-@* <form method="POST">
-    <fieldset>
-        <legend>Add Customer</legend>
-        <div>
-        <label for="CompanyName">Company Name:</label>
-        <input type="text" name="CompanyName" value="" />
-        </div>
-        <div>
-        <label for="ContactName">Contact Name:</label>
-        <input type="text" name="ContactName" value="" />
-        </div>
-        <div>
-        <label for="Employees">Employee Count:</label>
-        <input type="text" name="Employees" value="" />
-        </div>
-        <div>
-        <label>&nbsp;</label>
-        <input type="submit" value="Submit" class="submit" />
-        </div>
-    </fieldset>
-</form> *@
+<form method="POST" onsubmit=" return validateFields(); event.preventDefault()">
 
-
-<form method="POST">
+    @* Submit field for course code *@
     <div>
         <label for="courseCode">Course Code</label>
-        <input type="text" name="courseCode"required size="45" pattern="[A-Z]{3}[0-9]{4}" title="3 cap uppercase and 4 numbers">
-        <span class="validity"></span>
+        @* <input type="text" name="courseCode" required size="45" pattern="[A-Z]{3}[0-9]{4}" title="3 cap uppercase and 4 numbers"> *@
+        @* <span class="validity"></span> *@
+        <input type="text" name="courseCode" id="courseCode" onkeyup="checkEmpty(id)" onchange="validateInput(id)">
+        <label name="label_courseCode" id="label_courseCode" class="invalid"></label>
     </div>
 
+    @* Submit field for department *@
     <div>
         <label for="department">Department</label>
-        <select name="department">
-            <option value="Code">Select</option>
+        <select name="department" id="department" onchange="checkEmpty(id)">
+            <option value="Select">Select</option>
             <option value="Telfer">Telfer</option>
             <option value="Science">Science</option>
             <option value="Law">Law</option>
             <option value="Engineering">Engineering</option>
         </select>
+        <label name="label_department" id="label_department" class="invalid"></label>
     </div>
 
+    @* Submit field for difficulty *@
     <div>
         <label for="difficulty">Difficulty</label>
-        <select name="difficulty">
-                <option value="Score">Select</option>
+        <select name="difficulty" id="difficulty" onchange="checkEmpty(id)">
+                <option value="Select">Select</option>
                 <option value="1">1</option>
                 <option value="2">2</option>
                 <option value="3">3</option>
@@ -61,64 +49,27 @@
                 <option value="9">9</option>
                 <option value="10">10</option>
         </select>
+        <label name="label_difficulty" id="label_difficulty" class="invalid"></label>
     </div>
 
+    @* Submit field for grade *@
     <div>
         <label for="grade">Grade</label>
-        <input type="number" name="grade" required size="45" pattern="[0-9]{3}" title="3 cap uppercase and 4 numbers">
-        <span class="validity"></span>
+        @* <input type="number" name="grade" required size="45" pattern="[0-9]{3}" title="3 cap uppercase and 4 numbers">
+        <span class="validity"></span> *@
+        <input type="number" name="grade" id="grade" onkeyup="checkEmpty(id)" onchange="validateInput(id)">
+        <label name="label_grade" id="label_grade" class="invalid"></label>
     </div>
 
+    @* Submit field for comments *@
     <div>
         <label for="comments">Additional Comments</label>
-        <textarea name="comments"></textarea>
+        <textarea name="comments" id="comments" onkeyup="checkEmpty(id)"></textarea>
+        <label name="label_comments" id="label_comments" class="invalid"></label>
     </div>
 
-    <input type="submit" value="Submit" class="submit" />
+    @* Submit button *@
+    <input type="submit" value="Submit" class="submit"/>
+    <label name="submit" id="submit"></label>
+
 </form>
-
-@* <div class="grid-container">
-    <div class="grid-item">Select a Course</div>
-    <div class="grid-item">
-        <select>
-            <option value="Code">Select</option>
-            <option value="ADM4379">ADM4379</option>
-            <option value="ADM1100">ADM1100</option>
-            <option value="ADM1100">SOC3116</option>
-            <option value="ADM1100">LAW3222</option>
-        </select>
-    </div>
-    <div class="grid-item">Difficulty</div>
-    <div class="grid-item">
-        <select>
-            <option value="Score">Select</option>
-            <option value="1">1</option>
-            <option value="2">2</option>
-            <option value="3">3</option>
-            <option value="4">4</option>
-            <option value="5">5</option>
-            <option value="5">6</option>
-            <option value="5">7</option>
-            <option value="5">8</option>
-            <option value="5">9</option>
-            <option value="5">10</option>
-        </select>
-    </div>
-    <div class="grid-item">Grade Received</div>
-    <div class="grid-item">
-        <select>
-            <option value="Score">Select</option>
-            <option value="A">A</option>
-            <option value="B">B</option>
-            <option value="C">C</option>
-            <option value="D">D</option>
-        </select>
-    </div>
-    <div class="grid-item">Comments</div>
-    <div class="grid-item">
-        <textarea name="Comments" style="resize: none"></textarea>
-    </div>
-</div>
-<button id="submit" name="submit" onclick="submitReview()">
-    Submit
-</button> *@

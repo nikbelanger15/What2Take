@@ -11,3 +11,10 @@
 	margin: 25px 50px 50px 50px; /* top right bottom left */
 	background-color: #6e6e6e;
 }
+
+/* Clear floats after the columns */
+.row:after {
+	content: "";
+	display: table;
+	clear: both;
+}

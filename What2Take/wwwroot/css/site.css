@@ -66,51 +66,11 @@ h2 {
 	margin: 0px 0 0px 0;
 }
 
-/* Create two unequal columns that floats next to each other */
-/* Left column */
-.leftcolumn {
-	float: left;
-	width: 75%;
-}
-
-/* Right column */
-.rightcolumn {
-	float: right;
-	width: 25%;
-	background-color: #6e6e6e ;
-	padding-left: 20px;
-}
-
-
-/* Add a card effect for articles */
-.card {
-	padding: 25px 100px 50px 50px;
-	margin: 25px 50px 50px 50px; /* top right bottom left */
-	background-color: #6e6e6e;
-}
-
-.card h2 {
-	color: #86c232;
-}
-
 p {
 	color: #f2f2f2;
 	line-height: 150%;
 	font-size: 20px;
 }
-
-.ad {
-	padding: 20px;
-	margin-top: 20px;
-}
-
-/* Clear floats after the columns */
-.row:after {
-	content: "";
-	display: table;
-	clear: both;
-}
-
 
 /* Responsive layout - when the screen is less than 800px wide, make the two columns stack on top of each other instead of next to each other */
 @media screen and (max-width : 800px) {
@@ -129,71 +89,6 @@ p {
 		width: 100%;
 	}
 }
-
-/* Submit Page */
-.grid-container {
-	display: grid;
-	grid-template-columns: 1fr 1fr;
-	background-color: #4CAF50;
-	padding: 10px;
-	width: 50%;
-	margin-bottom: 50px;
-}
-.grid-item {
-	background-color: rgba(255, 255, 255, 0.8);
-	border: 1px solid rgba(0, 0, 0, 0.8);
-	padding: 20px;
-	font-size: 30px;
-	text-align: left;
-}
-
-/* Submit Button */
-.submit {
-	background-color: #4CAF50;
-	border: none;
-	color: white;
-	padding: 15px 32px;
-	text-align: center;
-	text-decoration: none;
-	font-size: 16px;
-	margin: 10px 10px;
-	cursor: pointer;
-	border-radius: 12px;
-}
-
-/* Comment Area on Submit Page */
-textarea {
-	width: 300px;
-	height: 150px;
-}
-
-
-/*table style */
-table {
-	font-family: arial, sans-serif;
-	border-collapse: collapse;
-	width: 100%;
-	table-layout: fixed;
-}
-
-td, th {
-	border: 1px solid #dddddd;
-	text-align: left;
-	padding: 8px;
-	table-layout: fixed;
-}
-
-tbody {
-	background-color: #d4d4d4;
-
-}
-
-thead {
-	background-color: #4CAF50;
-}
-
-
-
 
 /* Link Colors */
 a {
