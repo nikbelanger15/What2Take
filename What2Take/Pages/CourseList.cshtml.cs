@@ -18,10 +18,18 @@ namespace What2Take.Pages
         public IEnumerable<Average> averages;
         public IEnumerable<Average> Averages {
             get {
-                if (this.averages == null) return Enumerable.Empty<Average>();
-                else return this.averages;
+                if (this.averages == null) 
+                {
+                    return Enumerable.Empty<Average>();
+
+                }
+
+                else {
+                    return this.averages;
+                }
             }
             set {this.averages = value;}
+
         }
         public CourseListModel(ILogger<CourseListModel> logger, CoursesService CrsService)
         {
@@ -33,7 +41,6 @@ namespace What2Take.Pages
 
         public void OnGet()
         {
-
             averages = MyCoursesService.GetUniqueCourse();
         }
 

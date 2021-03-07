@@ -1,6 +1,7 @@
 using MongoDB.Bson.Serialization.Attributes;
 using System.Collections.Generic;
 using System.Linq;
+using System;
 
 namespace What2Take.Model {
     public class Average {
@@ -22,7 +23,6 @@ namespace What2Take.Model {
         public string code {get; set;}
         public int grade {get;set;}
         public int difficulty {get;set;}
-
         public List<string> departments { get; set; }
     }
     

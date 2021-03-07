@@ -48,6 +48,7 @@ namespace What2Take.Services
             for (var i=0; i<uniqueNames.Count; i++) {
                 List<Courses> tempCourses = c1.Where(o => o.code == uniqueNames[i]).ToList();
                 averages.Add(new Average(tempCourses));
+                averages = averages.OrderBy(o=>o.code).ToList();
                 
             }
             return averages;
@@ -81,7 +82,7 @@ namespace What2Take.Services
             if (sort == "difficulty") {
                 filtered = filtered.OrderBy(o=>o.difficulty).ToList();
             }
-            if (sort == "courseCode") {
+            if (sort == "code") {
                 filtered = filtered.OrderBy(o=>o.code).ToList();
             }
             return filtered;

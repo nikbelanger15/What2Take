@@ -53,9 +53,7 @@ function validateInput(id) {
 }
 
 function validateFields() {
-    hello = (checkEmpty("courseCode") && checkEmpty("department") && checkEmpty("difficulty") && checkEmpty("grade") && checkEmpty("comments") && validateInput("courseCode") && validateInput("grade"))
-    console.log(hello);
-    if ((checkEmpty("courseCode") && checkEmpty("department") && checkEmpty("difficulty") && checkEmpty("grade") && checkEmpty("comments") && validateInput("courseCode") && validateInput("grade")) === false) {
+    if ((checkEmpty("courseCode") && checkEmpty("department") && checkEmpty("grade") && checkEmpty("comments") && validateInput("courseCode") && validateInput("grade")) === false) {
         document.getElementById("submit").innerHTML = "Please correct the highlighted fields.";
         return false;
     } else {
@@ -63,3 +61,29 @@ function validateFields() {
     }
 }
 
+// slider function
+var slider = document.getElementById("difficulty");
+var output = document.getElementById("message");
+output.innerHTML = "Easy A+";
+
+slider.oninput = function() {
+    if (slider.value == 1) {
+        output.innerHTML = "Easy A"
+    } else if (slider.value == 2) {
+        output.innerHTML = "A+ if you attend lectures"
+    } else if (slider.value == 3) {
+        output.innerHTML = "Might need to study a bit"
+    } else if (slider.value == 4) {
+        output.innerHTML = "Lots of work"
+    } else if (slider.value == 5) {
+        output.innerHTML = "Super difficult"
+    }
+}
+
+// Let user know of submission
+
+// function submitted() {
+//     thanks = document.getElementById("thanks");
+//     thanks.innerHTML = "Thanks for your submission."
+
+// }

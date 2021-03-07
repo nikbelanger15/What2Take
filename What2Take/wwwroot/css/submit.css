@@ -1,26 +1,28 @@
 .invalid {
     color: red;
+	font-size: 12px;
 }
 
 label {
-    color: white;
+    color: #86c232;
 }
 
-/* .grid-container {
+.submit-container {
 	display: grid;
 	grid-template-columns: 1fr 1fr;
-	background-color: #4CAF50;
 	padding: 10px;
 	width: 50%;
 	margin-bottom: 50px;
+
 }
-.grid-item {
-	background-color: rgba(255, 255, 255, 0.8);
-	border: 1px solid rgba(0, 0, 0, 0.8);
+.submit-item {
+	/* border: 1px white rgba(0, 0, 0, 0.8); */
 	padding: 20px;
-	font-size: 30px;
+	font-size: 24px;
 	text-align: left;
-} */
+	font-family: arial, sans-serif;
+	font-weight: bold;
+}
 
 /* Submit Button */
 .submit {
@@ -40,4 +42,15 @@ label {
 textarea {
 	width: 300px;
 	height: 150px;
+	border-radius: 25px;
+	padding: 15px;
+}
+
+p {
+	color:#d4d4d4;
+}
+
+input, select {
+	padding: 15px;
+	border-radius: 25px;
 }
