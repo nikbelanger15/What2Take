@@ -7,61 +7,69 @@
     <script src="~/js/site.js"></script>
     <link rel="stylesheet" href="~/css/submit.css" />
 </head>
-<h1>@ViewData["Title"]</h1>
 
-<form method="POST" onsubmit="return validateFields(); event.preventDefault();">
-    <div class="submit-container">
-        <div class="submit-item">
-            <label for="courseCode">Course Code</label>
-        </div>
-        <div class="submit-item">
-            <input type="text" name="courseCode" id="courseCode" onkeyup="checkEmpty(id)" onchange="validateInput(id)" placeholder="eg. ADM1100">
-            <label name="label_courseCode" id="label_courseCode" class="invalid"></label>    
-        </div>
+<div class="submitform">
+    <h1>@ViewData["Title"]</h1>
 
-        <div class="submit-item">
-            <label for="department">Department</label>
-        </div>
-        <div class="submit-item">
-            <select name="department" id="department" onchange="checkEmpty(id)">
-                <option value="Select">Select</option>
-                <option value="Arts">Arts</option>
-                <option value="Education">Education</option>
-                <option value="Law">Law</option>
-                <option value="Medicine">Medicine</option>
-                <option value="Science">Science</option>
-                <option value="Social Science">Social Sciences</option>
-                <option value="Telfer">Telfer</option>
-            </select>
-            <label name="label_department" id="label_department" class="invalid"></label>
-        </div>
+    <form method="POST" onsubmit="return validateFields(); event.preventDefault();">
+        <div class="submit-container">
+            <div class="submit-item">
+                <label for="courseCode">Course Code</label>
+            </div>
+            <div class="submit-item">
+                <input type="text" name="courseCode" id="courseCode" onkeyup="checkEmpty(id)" onchange="validateInput(id)" placeholder="eg. ADM1100">
+                <label name="label_courseCode" id="label_courseCode" class="invalid"></label>    
+            </div>
 
-        <div class="submit-item">
-            <label for="difficulty">Difficulty</label>
-        </div>
-        <div class="submit-item">
-            <input type="range" min="1" max="5" value="1" name="difficulty" id="difficulty">
-            <p id="message"></p>
-        </div>
+            <div class="submit-item">
+                <label for="department">Department</label>
+            </div>
+            <div class="submit-item">
+                <select name="department" id="department" onchange="checkEmpty(id)">
+                    <option value="Select">Select</option>
+                    <option value="Arts">Arts</option>
+                    <option value="Education">Education</option>
+                    <option value="Law">Law</option>
+                    <option value="Medicine">Medicine</option>
+                    <option value="Science">Science</option>
+                    <option value="Social Science">Social Sciences</option>
+                    <option value="Telfer">Telfer</option>
+                </select>
+                <label name="label_department" id="label_department" class="invalid"></label>
+            </div>
 
-        <div class="submit-item">
-            <label for="grade">Grade</label>
-            <p>(Final % Grade)</p>
-        </div>
-        <div class="submit-item">
-            <input type="number" name="grade" id="grade" onkeyup="checkEmpty(id)" onchange="validateInput(id)" placeholder="eg. 85">
-            <label name="label_grade" id="label_grade" class="invalid"></label>    
-        </div>
+            <div class="submit-item">
+                <label for="difficulty">Difficulty</label>
+            </div>
+            <div class="submit-item">
+                <input type="range" min="1" max="5" value="1" name="difficulty" id="difficulty">
+                <p id="message"></p>
+            </div>
 
-        <div class="submit-item">
-            <label for="comments">Additional Comments</label>
+            <div class="submit-item">
+                <label for="grade">Grade</label>
+                <p>(Final % Grade)</p>
+            </div>
+            <div class="submit-item">
+                <input type="number" name="grade" id="grade" onkeyup="checkEmpty(id)" onchange="validateInput(id)" placeholder="eg. 85">
+                <label name="label_grade" id="label_grade" class="invalid"></label>    
+            </div>
+
+            <div class="submit-item">
+                <label for="comments">Additional Comments</label>
+            </div>
+            <div class="submit-item">
+                <textarea name="comments" id="comments" onkeyup="checkEmpty(id)" placeholder="Comments"></textarea>
+                <label name="label_comments" id="label_comments" class="invalid"></label>
+            </div>
+
+            <div class="submit-item">
+            </div>
+            <div class="submit-item">
+                <input type="submit" value="Submit" class="submit"/>
+                <label name="submit" id="submit" class="invalid"></label>
+            </div>
+            
         </div>
-        <div class="submit-item">
-            <textarea name="comments" id="comments" onkeyup="checkEmpty(id)" placeholder="Comments"></textarea>
-            <label name="label_comments" id="label_comments" class="invalid"></label>
-        </div>
-    </div>
-        @* Submit button *@
-    <input type="submit" value="Submit" class="submit"/>
-    <label name="submit" id="submit" class="invalid"></label>
-</form>
+    </form>
+</div>

@@ -1,0 +1,45 @@
+@page
+@model ContactModel
+@{
+    ViewData["Title"] = "Contact Us";
+}
+
+
+<head>
+    <script src="~/js/site.js"></script>
+    <link rel="stylesheet" href="~/css/submit.css" />
+</head>
+
+<div class="submitform">
+    <h1>@ViewData["Title"]</h1>
+    <form>
+        <div class="submit-container">
+            <div class="submit-item">
+                <label for="name">Name</label>
+            </div>
+            <div class="submit-item">
+                <input type="text">
+            </div>
+
+            <div class="submit-item">
+                <label for="email">E-mail</label>
+            </div>
+            <div class="submit-item">
+                <input type="text">
+            </div>
+
+            <div class="submit-item">
+                <label for="comments"> Comments</label>
+            </div>
+            <div class="submit-item">
+                <textarea></textarea>
+            </div>
+
+            <div class="submit-item">
+            </div>
+            <div class="submit-item">
+                <input type="submit" value="Submit" class="submit"/>
+            </div>
+        </div>
+    </form>
+</div>

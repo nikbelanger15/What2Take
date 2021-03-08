@@ -15603,6 +15603,11 @@
   "RootNamespace": "What2Take",
   "Documents": [
     {
+      "FilePath": "c:\\Users\\Administrator\\Documents\\Work Projects\\ADM4379\\What2Take\\Pages\\FAQ.cshtml",
+      "TargetPath": "Pages\\FAQ.cshtml",
+      "FileKind": "mvc"
+    },
+    {
       "FilePath": "c:\\Users\\Administrator\\Documents\\Work Projects\\ADM4379\\What2Take\\Pages\\CourseList.cshtml",
       "TargetPath": "Pages\\CourseList.cshtml",
       "FileKind": "mvc"
@@ -15630,6 +15635,11 @@
     {
       "FilePath": "c:\\Users\\Administrator\\Documents\\Work Projects\\ADM4379\\What2Take\\Pages\\Index.cshtml",
       "TargetPath": "Pages\\Index.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "c:\\Users\\Administrator\\Documents\\Work Projects\\ADM4379\\What2Take\\Pages\\Contact.cshtml",
+      "TargetPath": "Pages\\Contact.cshtml",
       "FileKind": "mvc"
     },
     {

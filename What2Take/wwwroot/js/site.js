@@ -25,7 +25,7 @@ function checkEmpty(id) {
 function validateInput(id) {
     var inputControl = document.getElementById(id);
     var code = inputControl.value;
-    var pattern = new RegExp(/[A-Z]{3}[0-9]{4}/);
+    var pattern = new RegExp(/^[A-Z]{3}[0-9]{4}$/);
 
 
     if (id == "courseCode") {
@@ -64,19 +64,19 @@ function validateFields() {
 // slider function
 var slider = document.getElementById("difficulty");
 var output = document.getElementById("message");
-output.innerHTML = "Easy A+";
+output.innerHTML = "1: Easy A+";
 
 slider.oninput = function() {
     if (slider.value == 1) {
-        output.innerHTML = "Easy A"
+        output.innerHTML = "1: Easy A"
     } else if (slider.value == 2) {
-        output.innerHTML = "A+ if you attend lectures"
+        output.innerHTML = "2: A+ if you attend lectures"
     } else if (slider.value == 3) {
-        output.innerHTML = "Might need to study a bit"
+        output.innerHTML = "3: Might need to study a bit"
     } else if (slider.value == 4) {
-        output.innerHTML = "Lots of work"
+        output.innerHTML = "4: Lots of work"
     } else if (slider.value == 5) {
-        output.innerHTML = "Super difficult"
+        output.innerHTML = "5: Super difficult"
     }
 }
 
@@ -87,3 +87,21 @@ slider.oninput = function() {
 //     thanks.innerHTML = "Thanks for your submission."
 
 // }
+
+
+function accordion() {
+    var acc = document.getElementsByClassName("accordion");
+    var i;
+
+    for (i = 0; i < acc.length; i++) {
+        acc[i].addEventListener("click", function() {
+          this.classList.toggle("active");
+          var panel = this.nextElementSibling;
+          if (panel.style.maxHeight) {
+            panel.style.maxHeight = null;
+          } else {
+            panel.style.maxHeight = panel.scrollHeight + "px";
+          }
+        });
+    }
+}

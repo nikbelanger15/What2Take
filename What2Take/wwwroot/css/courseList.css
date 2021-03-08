@@ -1,3 +1,6 @@
+.table {
+	margin: 0 250px 0 250px;
+}
 
 div.tooltip {
 	position: relative;
@@ -42,6 +45,7 @@ table {
 	border-collapse: collapse;
 	width: 100%;
 	table-layout: fixed;
+	border-radius: 15px;
 }
 
 td, th {
@@ -67,4 +71,10 @@ tr:nth-child(odd) {
 
 label {
 	color: white;
+}
+
+select {
+	padding: 8px;
+	border-radius: 25px;
+	margin-right: 8px;
 }

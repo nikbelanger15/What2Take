@@ -1,0 +1,49 @@
+@page
+@model FAQModel
+@{
+    ViewData["Title"] = "Frequently Asked Questions";
+}
+
+
+<head>
+    <script src="~/js/site.js"></script>
+    <link rel="stylesheet" href="~/css/FAQ.css" />
+</head>
+
+
+
+<body onload="accordion()">
+    <div class="container1">
+        <h1>@ViewData["Title"]</h1>
+        <button class="accordion"><h3>What is What2Take?</h3></button>
+        <div class="panel">
+            <p>What2Take is a website that helps students choose the perfect electives. What2Take provides you with reviews create by students who have actually taken these classes to help you in your decision process.</p>
+        </div>
+
+        <button class="accordion"><h3>How can I submit a review?</h3></button>
+        <div class="panel">
+            <p> To submit a review, you just have to click on the <a asp-page="/Submit">Submit a Review</a> button right there, and follow the steps. It’s so simple! </p>
+        </div>
+
+        <button class="accordion"><h3>Are the reviews anonymous?</h3></button>
+        <div class="panel">
+            <p>Yes, any review posted on What2Take does not disclose any personal information about the user. </p>
+        </div>
+
+        <button class="accordion"><h3>Can I delete a review?</h3></button>
+        <div class="panel">
+            <p>You will not be able to delete a review by yourself however, you may contact us here <a asp-page="/Contact">Contact Us</a> for assistance.</p>
+        </div>
+
+        <button class="accordion"><h3>Is there a mobile app for What2Take?</h3></button>
+        <div class="panel">
+            <p> No, there is no What2Take app yet, but we are working on it.</p>
+        </div>
+
+        <button class="accordion"><h3>How does the rating system work?</h3></button>
+        <div class="panel">
+            <p> The grade received field is the users final grade for the course. The class difficulty is the student's thoughts on how difficult the class was for them ( 0 to 5 for the easiest to the more difficult).</p>
+        </div>
+
+    </div>
+</body>

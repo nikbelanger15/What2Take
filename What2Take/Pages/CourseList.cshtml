@@ -8,51 +8,53 @@
     <link rel="stylesheet" href="~/css/courseList.css" />
 
 </head>
-<h1>@ViewData["Title"]</h1>
 
-<form method="POST">
-    <label for="sort">Sort by: </label>
-    <select name="sort">
-        <option value="Select">Select</option>
-        <option value="code">Course Code</option>
-        <option value="grade">Grade</option>
-        <option value="difficulty">Difficulty</option>
-    </select>
+<div class="table">
+    <h1>@ViewData["Title"]</h1>
+    <form method="POST">
+        <label for="sort">Sort by: </label>
+        <select name="sort" onchange="this.form.submit()">
+            <option value="Select">Select</option>
+            <option value="code">Course Code</option>
+            <option value="grade">Grade</option>
+            <option value="difficulty">Difficulty</option>
+        </select>
 
-    <label for="filter">See Department: </label>
-    <select name="filter">
-        <option value="Select">Select</option>
-        <option value="Arts">Arts</option>
-        <option value="Education">Education</option>
-        <option value="Engineering">Engineering</option>
-        <option value="Law">Law</option>
-        <option value="Medicine">Medicine</option>
-        <option value="Science">Science</option>
-        <option value="Social Science">Social Sciences</option>
-        <option value="Telfer">Telfer</option>
-    </select>
+        <label for="filter">See Department: </label>
+        <select name="filter" onchange="this.form.submit()">
+            <option value="Select">Select</option>
+            <option value="Arts">Arts</option>
+            <option value="Education">Education</option>
+            <option value="Engineering">Engineering</option>
+            <option value="Law">Law</option>
+            <option value="Medicine">Medicine</option>
+            <option value="Science">Science</option>
+            <option value="Social Science">Social Sciences</option>
+            <option value="Telfer">Telfer</option>
+        </select>
 
-    <input type="submit" class="submit" value="Submit"/>
-</form>
+        @* <input type="submit" class="submit" value="Submit"/> *@
+    </form>
 
 
-<table>
-    <tr>
-        <th>Course Code <div class="tooltip">?
-            <span class="tooltiptext">Click a course to see reviews</span>
-            </div></th>
-        <th>Department</th>
-        <th>Average Difficulty <div class="tooltip">?
-            <span class="tooltiptext">1 being the easiest and 5 is the hardest</span>
-            </div></th>
-        <th>Average Grade Received</th>
-    </tr>
-    @foreach (var avg in Model.Averages) {
+    <table>
         <tr>
-            <td><a asp-page="/Review" asp-route-id="@avg.code">@avg.code</a> </td>
-            <td>@avg.departments</td>
-            <td>@avg.difficulty</td>
-            <td>@avg.grade</td>
+            <th>Course Code <div class="tooltip">?
+                <span class="tooltiptext">Click a course to see reviews</span>
+                </div></th>
+            <th>Department</th>
+            <th>Average Difficulty <div class="tooltip">?
+                <span class="tooltiptext">1 being the easiest and 5 is the hardest</span>
+                </div></th>
+            <th>Average Grade Received</th>
         </tr>
-    }
-</table>
+        @foreach (var avg in Model.Averages) {
+            <tr>
+                <td><a asp-page="/Review" asp-route-id="@avg.code">@avg.code</a> </td>
+                <td>@avg.departments[0]</td>
+                <td>@avg.difficulty</td>
+                <td>@avg.grade</td>
+            </tr>
+        }
+    </table>
+</div>
