@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "8aU/iXiWi+HYVoxcSuRbvJ2hJcb/nW5BRNibWFeOlUml8EGI7A23B0rpzyJ/cQVuwfCxIaSWzljCCzy5tOs1kQ==",
+  "dgSpecHash": "FqJi8PlXyTkEz1MfuNS5sqxqV8ySZdeR4HPPHAm+iJmFJvaOLKNjvQEZnYeLlHFEG0A0Pk3EdUa9sjhCt0tiYA==",
   "success": true,
-  "projectFilePath": "C:\\Users\\Administrator\\Documents\\Work Projects\\ADM4379\\What2Take\\What2Take.csproj",
+  "projectFilePath": "C:\\Users\\Administrator\\Documents\\Work Projects\\ADM4379\\What2Take\\What2Take\\What2Take.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\Administrator\\.nuget\\packages\\dnsclient\\1.3.1\\dnsclient.1.3.1.nupkg.sha512",
     "C:\\Users\\Administrator\\.nuget\\packages\\microsoft.netcore.platforms\\2.1.2\\microsoft.netcore.platforms.2.1.2.nupkg.sha512",

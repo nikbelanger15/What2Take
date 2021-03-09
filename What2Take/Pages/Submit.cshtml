@@ -11,7 +11,7 @@
 <div class="submitform">
     <h1>@ViewData["Title"]</h1>
 
-    <form method="POST" onsubmit="return validateFields(); event.preventDefault();">
+    <form method="POST" onsubmit="return validateFields(); event.preventDefault();" asp-page="/Thanks">
         <div class="submit-container">
             <div class="submit-item">
                 <label for="courseCode">Course Code</label>

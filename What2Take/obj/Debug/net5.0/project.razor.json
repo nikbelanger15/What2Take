@@ -1,5 +1,5 @@
 {
-  "FilePath": "c:\\Users\\Administrator\\Documents\\Work Projects\\ADM4379\\What2Take\\What2Take.csproj",
+  "FilePath": "c:\\Users\\Administrator\\Documents\\Work Projects\\ADM4379\\What2Take\\What2Take\\What2Take.csproj",
   "Configuration": {
     "ConfigurationName": "MVC-3.0",
     "LanguageVersion": "5.0",
@@ -15603,63 +15603,68 @@
   "RootNamespace": "What2Take",
   "Documents": [
     {
-      "FilePath": "c:\\Users\\Administrator\\Documents\\Work Projects\\ADM4379\\What2Take\\Pages\\FAQ.cshtml",
-      "TargetPath": "Pages\\FAQ.cshtml",
-      "FileKind": "mvc"
-    },
-    {
-      "FilePath": "c:\\Users\\Administrator\\Documents\\Work Projects\\ADM4379\\What2Take\\Pages\\CourseList.cshtml",
-      "TargetPath": "Pages\\CourseList.cshtml",
-      "FileKind": "mvc"
-    },
-    {
-      "FilePath": "c:\\Users\\Administrator\\Documents\\Work Projects\\ADM4379\\What2Take\\Pages\\Privacy.cshtml",
-      "TargetPath": "Pages\\Privacy.cshtml",
-      "FileKind": "mvc"
-    },
-    {
-      "FilePath": "c:\\Users\\Administrator\\Documents\\Work Projects\\ADM4379\\What2Take\\Pages\\Shared\\_ValidationScriptsPartial.cshtml",
-      "TargetPath": "Pages\\Shared\\_ValidationScriptsPartial.cshtml",
-      "FileKind": "mvc"
-    },
-    {
-      "FilePath": "c:\\Users\\Administrator\\Documents\\Work Projects\\ADM4379\\What2Take\\Pages\\Submit.cshtml",
-      "TargetPath": "Pages\\Submit.cshtml",
-      "FileKind": "mvc"
-    },
-    {
-      "FilePath": "c:\\Users\\Administrator\\Documents\\Work Projects\\ADM4379\\What2Take\\Pages\\Review.cshtml",
-      "TargetPath": "Pages\\Review.cshtml",
-      "FileKind": "mvc"
-    },
-    {
-      "FilePath": "c:\\Users\\Administrator\\Documents\\Work Projects\\ADM4379\\What2Take\\Pages\\Index.cshtml",
-      "TargetPath": "Pages\\Index.cshtml",
-      "FileKind": "mvc"
-    },
-    {
-      "FilePath": "c:\\Users\\Administrator\\Documents\\Work Projects\\ADM4379\\What2Take\\Pages\\Contact.cshtml",
-      "TargetPath": "Pages\\Contact.cshtml",
-      "FileKind": "mvc"
-    },
-    {
-      "FilePath": "c:\\Users\\Administrator\\Documents\\Work Projects\\ADM4379\\What2Take\\Pages\\Error.cshtml",
-      "TargetPath": "Pages\\Error.cshtml",
-      "FileKind": "mvc"
-    },
-    {
-      "FilePath": "c:\\Users\\Administrator\\Documents\\Work Projects\\ADM4379\\What2Take\\Pages\\_ViewStart.cshtml",
+      "FilePath": "c:\\Users\\Administrator\\Documents\\Work Projects\\ADM4379\\What2Take\\What2Take\\Pages\\_ViewStart.cshtml",
       "TargetPath": "Pages\\_ViewStart.cshtml",
       "FileKind": "mvc"
     },
     {
-      "FilePath": "c:\\Users\\Administrator\\Documents\\Work Projects\\ADM4379\\What2Take\\Pages\\Shared\\_Layout.cshtml",
+      "FilePath": "c:\\Users\\Administrator\\Documents\\Work Projects\\ADM4379\\What2Take\\What2Take\\Pages\\Index.cshtml",
+      "TargetPath": "Pages\\Index.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "c:\\Users\\Administrator\\Documents\\Work Projects\\ADM4379\\What2Take\\What2Take\\Pages\\Contact.cshtml",
+      "TargetPath": "Pages\\Contact.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "c:\\Users\\Administrator\\Documents\\Work Projects\\ADM4379\\What2Take\\What2Take\\Pages\\FAQ.cshtml",
+      "TargetPath": "Pages\\FAQ.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "c:\\Users\\Administrator\\Documents\\Work Projects\\ADM4379\\What2Take\\What2Take\\Pages\\Error.cshtml",
+      "TargetPath": "Pages\\Error.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "c:\\Users\\Administrator\\Documents\\Work Projects\\ADM4379\\What2Take\\What2Take\\Pages\\CourseList.cshtml",
+      "TargetPath": "Pages\\CourseList.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "c:\\Users\\Administrator\\Documents\\Work Projects\\ADM4379\\What2Take\\What2Take\\Pages\\_ViewImports.cshtml",
+      "TargetPath": "Pages\\_ViewImports.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "c:\\Users\\Administrator\\Documents\\Work Projects\\ADM4379\\What2Take\\What2Take\\Pages\\Submit.cshtml",
+      "TargetPath": "Pages\\Submit.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "c:\\Users\\Administrator\\Documents\\Work Projects\\ADM4379\\What2Take\\What2Take\\Pages\\Shared\\_Layout.cshtml",
       "TargetPath": "Pages\\Shared\\_Layout.cshtml",
       "FileKind": "mvc"
     },
     {
-      "FilePath": "c:\\Users\\Administrator\\Documents\\Work Projects\\ADM4379\\What2Take\\Pages\\_ViewImports.cshtml",
-      "TargetPath": "Pages\\_ViewImports.cshtml",
+      "FilePath": "c:\\Users\\Administrator\\Documents\\Work Projects\\ADM4379\\What2Take\\What2Take\\Pages\\Shared\\_ValidationScriptsPartial.cshtml",
+      "TargetPath": "Pages\\Shared\\_ValidationScriptsPartial.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "c:\\Users\\Administrator\\Documents\\Work Projects\\ADM4379\\What2Take\\What2Take\\Pages\\Review.cshtml",
+      "TargetPath": "Pages\\Review.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "c:\\Users\\Administrator\\Documents\\Work Projects\\ADM4379\\What2Take\\What2Take\\Pages\\Thanks.cshtml",
+      "TargetPath": "Pages\\Thanks.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "c:\\Users\\Administrator\\Documents\\Work Projects\\ADM4379\\What2Take\\What2Take\\Pages\\Privacy.cshtml",
+      "TargetPath": "Pages\\Privacy.cshtml",
       "FileKind": "mvc"
     }
   ],

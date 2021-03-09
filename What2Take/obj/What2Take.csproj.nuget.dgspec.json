@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\Administrator\\Documents\\Work Projects\\ADM4379\\What2Take\\What2Take.csproj": {}
+    "C:\\Users\\Administrator\\Documents\\Work Projects\\ADM4379\\What2Take\\What2Take\\What2Take.csproj": {}
   },
   "projects": {
-    "C:\\Users\\Administrator\\Documents\\Work Projects\\ADM4379\\What2Take\\What2Take.csproj": {
+    "C:\\Users\\Administrator\\Documents\\Work Projects\\ADM4379\\What2Take\\What2Take\\What2Take.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Administrator\\Documents\\Work Projects\\ADM4379\\What2Take\\What2Take.csproj",
+        "projectUniqueName": "C:\\Users\\Administrator\\Documents\\Work Projects\\ADM4379\\What2Take\\What2Take\\What2Take.csproj",
         "projectName": "What2Take",
-        "projectPath": "C:\\Users\\Administrator\\Documents\\Work Projects\\ADM4379\\What2Take\\What2Take.csproj",
+        "projectPath": "C:\\Users\\Administrator\\Documents\\Work Projects\\ADM4379\\What2Take\\What2Take\\What2Take.csproj",
         "packagesPath": "C:\\Users\\Administrator\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Administrator\\Documents\\Work Projects\\ADM4379\\What2Take\\obj\\",
+        "outputPath": "C:\\Users\\Administrator\\Documents\\Work Projects\\ADM4379\\What2Take\\What2Take\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\Administrator\\AppData\\Roaming\\NuGet\\NuGet.Config"
