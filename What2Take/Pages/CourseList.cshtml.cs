@@ -46,8 +46,6 @@ namespace What2Take.Pages
 
         public void OnPost()
         {
-            Console.WriteLine(Request.Form["sort"]);
-            Console.WriteLine(Request.Form["filter"]);
             averages = MyCoursesService.GetFiltered(Request.Form["filter"], Request.Form["sort"]);
         }
     }
